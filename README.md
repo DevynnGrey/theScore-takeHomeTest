@@ -6,6 +6,8 @@ Clone the repo using your favorite tool. For this project, I started with using 
 
 Once cloned, run `npm install` to install all necessary package files for running the tests. After install, simply run `npm run wdio` with your Android Studio instance running to kick off the tests. You'll need to make sure that you have the `Pixel 7 Pro API 34` device installed otherwise you will need to update the Appium capabilities in the `wdio.conf.js` file with your preferred emulator. The test automation will kick off and navigate through the basic steps to get to the main landing page, going to a team page, then using the Android device 'back' button to return back to the landing screen.
 
+***Note: Please make sure that the Pixel 7 Pro Api 34 emulator is running so that the tests can execute properly.***
+
 # Need to install everything, including Node? Start here!
 Never used Node, or do not have it installed? Need to install Java on your Mac? Here are the steps to install core dependencies, if needed.
 
