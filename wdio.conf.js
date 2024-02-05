@@ -13,6 +13,7 @@ export const config = {
     // This is the spot where you define the WDIO capabilities. Since I'm running locally, 3 instances is enough, but if using a cloud provider you can scale as high as you can afford
     maxInstances: 3,
     // This is where you define specific test runner capabilities, in this case Appium on Android
+    services: ['appium'],
     capabilities: [{
         platformName: 'Android',
         'appium:automationName': 'UiAutomator2',
@@ -22,6 +23,11 @@ export const config = {
         'appium:appActivity': 'com.fivemobile.thescore.ui.MainActivity',
         'appium:autoGrantPermissions': 'true'
     }],
+    // Here is the config for BrowserStack, in case you wanted to run the tests using a cloud provider. I had it running using my BrowserStack account, but I ran out of automation minutes and did not want to sign up for a plan.
+    //  services: ['browserstack'],
+    //  user: process.env.BROWSERSTACK_USERNAME,
+    //  key: process.env.BROWSERSTACK_ACCESS_KEY,
+    //  browserstackLocal: false,
     // WDIO Test Running Options
     // Define all options that are relevant for WDIO test running here
     // Level of logging verbosity, in my case I set to error since I want to see when the runner errors out
@@ -38,8 +44,6 @@ export const config = {
     // Default request retries count
     connectionRetryCount: 3,
     //
-    // Test runner services
-    services: ['appium'],
     // Framework you want to run your specs with: Mocha, Jasmine, and Cucumber
     framework: 'mocha',
     //
@@ -52,8 +56,9 @@ export const config = {
     // Whether or not retried spec files should be retried immediately or deferred to the end of the queue
     // specFileRetriesDeferred: false,
     //
-    // Test reporter for stdout. I choose to use spec, but I have Slack reporter in place for if I want to turn that on. Note: You would need to import 'SlackReporter' at the top of this file to access it.
+    // Test reporter for stdout/spec. I choose to use spec, but I have Slack reporter in place for if I want to turn that on. Note: You would need to import 'SlackReporter' at the top of this file to access it.
     reporters: ['spec'],
+    // import SlackReporter from '@moroo/wdio-slack-reporter';
     // 'SlackReporter',
     // {
     //   slackOptions: {

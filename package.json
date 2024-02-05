@@ -1,4 +1,9 @@
 {
+  "name": "thecore-takehometest",
+  "author": "Shaun",
+  "version": "1.0.0",
+  "description": "This is the homework/take home test for The Score, creating mobile test automation using Appium.",
+  "homepage": "https://github.com/DevynnGrey/theScore-takeHomeTest",
   "type": "module",
   "devDependencies": {
     "@moroo/wdio-slack-reporter": "^8.1.0",

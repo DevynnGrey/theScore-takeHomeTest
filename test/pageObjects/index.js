@@ -1,3 +1,11 @@
+/* 
+DESCRIPTION
+So this is the vanilla formatting for how WebdriverIO would like to define selectors and export them in a Page Model fashion, and to be honest, it's not my favorite simply due to the fact that you have to do so many predefined functions (especially with all of the get/return calls). The $ is needed by WDIO to indicate that the element is considered to be a selector, similair to how TesCafe needs the t object to do something similar.
+
+I have a detailed explanation on how I would expand this in the future located in the readme.md file, but for the intent/purpose of this exercise, this formatting/implementation is 100% functional.
+*/
+
+
 import { $ } from '@wdio/globals'
 
 class pageObject {
