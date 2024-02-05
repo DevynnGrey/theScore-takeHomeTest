@@ -7,7 +7,7 @@ export const config = {
     // Pointing WDIO to the folder that houses all of the test files for the application
     // TODO: Add Page Objects folder
     specs: [
-        './test/specs/*.js'
+        './testAssets/specs/*.js'
     ],
     // WDIO Capabilities Section
     // This is the spot where you define the WDIO capabilities. Since I'm running locally, 3 instances is enough, but if using a cloud provider you can scale as high as you can afford
