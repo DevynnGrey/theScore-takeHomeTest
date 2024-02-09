@@ -8,6 +8,8 @@ Once cloned, run `npm install` to install all necessary package files for runnin
 
 ***Note: Please make sure that the Pixel 7 Pro Api 34 emulator is running so that the tests can execute properly.***
 
+***Note #2:*** ***I am aware that there is a bug with this code in terms of location services. Since I had them on while writing this test, it puts the Seattle Seahawks to the top of the recommended teams. I will be pushing an update over the weekend to ensure that the tests are more robust and not tied to the Seahawks.***
+
 # Need to install everything, including Node? Start here!
 Never used Node, or do not have it installed? Need to install Java on your Mac? Here are the steps to install core dependencies, if needed.
 
